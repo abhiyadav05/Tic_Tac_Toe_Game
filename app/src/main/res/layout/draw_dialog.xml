@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/hint_color"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+
+        android:text="@string/winner_draw"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="10sp"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="150sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/try_again_img"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restart"
+        android:id="@+id/restartBtn"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:background="@drawable/winner_btn"
+        android:textColor="@color/main_bg"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:id="@+id/exitBtn"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/winner_btn"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/main_bg"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</LinearLayout>
